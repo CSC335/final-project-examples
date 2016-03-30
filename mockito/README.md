@@ -5,13 +5,13 @@ To compile this example please do the following:
 
 1. Download Mockito from the link above.
 2. Add Mockito to your build path:
-..1. Move the Mockito jar into your project.
-..2. Rick click on your Project in Eclipse.
-..3. Click Build Path... -> Configure Build Path.
-..4. Switch to the libraries tab.
-..5. Click Add JARs...
-..6. Locate your JAR, highlight it, and click OK
-..7. Click OK
+  1. Move the Mockito jar into your project.
+  2. Rick click on your Project in Eclipse.
+  3. Click Build Path... -> Configure Build Path.
+  4. Switch to the libraries tab.
+  5. Click Add JARs...
+  6. Locate your JAR, highlight it, and click OK
+  7. Click OK
 
 In this example we take the Dependency Injection example and refactor the code from the good package to use Mockito.
 By using Mockito we avoid writing our own classes to mock out functionality.
