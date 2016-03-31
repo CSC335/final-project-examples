@@ -1,0 +1,5 @@
+# Reflection Example
+This example uses Java's Reflection API.
+For a more in depth tutorial you can see Oracle's [here](https://docs.oracle.com/javase/tutorial/reflect/) for the API see [this](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/package-summary.html)
+In this example I show how you can avoid some bugs by using reflection (the information about classes and instances) to create new instances on demand in a PokemonGenerator. Essentially, we create a list of Class objects for the concrete classes in the Pokemon hierarchy and select one of them randomly. This avoids needing to create many objects every time a Pokemon is generated, reusing the same instances over and over again (which cause cause bugs if the Objects are not immutable or if you are comparing Objects), and using instanceof in a yuuuge if statement.
+By using a Class object with the proper constraints you can easily generate any Pokemon no matter the size of your hierarchy.
