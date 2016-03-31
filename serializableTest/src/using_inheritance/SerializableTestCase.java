@@ -22,7 +22,7 @@ public abstract class SerializableTestCase {
 		objectOut.writeObject(expected);
 		InputStream in = new ByteArrayInputStream(out.toByteArray());
 		ObjectInputStream objectIn = new ObjectInputStream(in);
-		Pokemon actual = (Pokemon)objectIn.readObject();
+		Serializable actual = (Serializable)objectIn.readObject();
 		assertEquals(expected, actual);
 	}
 
